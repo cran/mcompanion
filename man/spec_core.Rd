@@ -17,7 +17,7 @@ spec_core(mo, evalue, heights, ubasis = NULL, uorth = NULL, evspace = NULL)
     dimensions of Jordan blocks of \code{evalue}, a vector of positive
     integers.
   }
-  \item{ubasis}{basis of the universe, a matrix}
+  \item{ubasis}{basis of the universe, a matrix.}
   \item{uorth}{
     orthogonal complement of \code{ubasis} w.r.t. the full core basis,
     see Details.
@@ -62,4 +62,4 @@ spec_seeds1(c(2,1,1,1), 4)
 spec_core(4, 1, c(2,1,1,1))$co
 spec_core(4, 1, c(2,1,1,1))$generators
 }
-\keyword{ multi-companion }
+\keyword{ mcspec }

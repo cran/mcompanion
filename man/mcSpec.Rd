@@ -88,7 +88,6 @@ mcSpec(\dots)
 
   Note: \code{evtypes} is for types of additional eigenvalues. Do not
   specify types for eigenvalues equal to one or zero.
-
 }
 \value{
   an object of class \code{mcSpec}

@@ -23,13 +23,6 @@ permute_var <- function(mat, perm = nrow(mat):1){   ## TODO: seems unused!
     res
 }
 
-.rnrow <- function(x){
-    if(is.list(x))
-        Recall(x[[1]])
-    else
-        NROW(x) # 2015-12-30 was: nrow(x)
-}
-
 permute_synch <- function(param, perm){
     if(missing(perm)){
         n <- .rnrow(param)
@@ -49,6 +42,13 @@ permute_synch <- function(param, perm){
     }
 
     fu(param)
+}
+
+.rnrow <- function(x){
+    if(is.list(x))
+        Recall(x[[1]])
+    else
+        NROW(x) # 2015-12-30 was: nrow(x)
 }
 
 ## new: 2015-03-25
@@ -82,3 +82,45 @@ permute_synch <- function(param, perm){
                       #    stopifnot(all(d == diag(D)))
     list(U = U, d = d)
 }
+
+null_complement <- function(m, universe = NULL, na.allow = TRUE){
+    ## edited 2015-07-10 to give error when both 'm' and 'universe' are NULL
+    if(na.allow && anyNA(m)){  # todo: this is probaly sensible only if all elem. of m are
+                               #       NA; could be refined, at least for the case when some
+                               #       columns of m are free from NA's
+        if(isNA(m)){
+            if(is.null(universe))
+                ## Cannot determine the dimension of the space,  so error.
+                stop("One of 'm' and 'universe' must be non-NULL.")
+            else
+                return(universe)
+        }##else m is assumed a matrix
+
+        if(is.null(universe))
+            universe <- diag(nrow = NROW(m))
+
+        if(all(is.na(m)))
+            res <- matrix(NA_real_, nrow = NROW(m), ncol = ncol(universe) - NCOL(m))
+        else{
+            ## Zasega ostavyam kakto gornoto, vzh. komentara po-dolu.
+            ##
+            res <- matrix(NA_real_, nrow = NROW(m), ncol = ncol(universe) - NCOL(m))
+            ##
+            ## TODO: rezultatat e lineyni komb. na kolonite na u2, ako vsyaka ot kolonite na
+            ## 'm' e ili iztsyalo NA ili bez NA's. Inache (ako ima koloni s chisla i NA)
+            ## tryabva oste rabota. PRI VSYAKO POLOZHENIE mi tryabva klas za parametrizirani
+            ## pod-prostranstva, napr. e edin element za parametrite i vtori za bazisa.
+            ##       flags <- apply(m, 2, function(x) any(is.na(x)))
+            ##       wrk <- m[ , !flags] # select columns without any NA's
+            ##       u2 <- null_complement(wrk, universe = universe, na.allow = FALSE)
+        }
+
+        return(res)
+    }
+
+    if(is.null(universe))
+        return( Null(m) )
+
+    Null( cbind(m, Null(universe)) )   # compl of A w.r.t. B, where A is subspace of B
+                                       # equals complement of (A union B_orth)
+} # for additional comments on orthogonal spaces see the comments at the end of this file.
