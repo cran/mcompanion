@@ -1,4 +1,9 @@
-# Version 0.5-0
+# Version 0.5-1 (CRAN)
+
+- Built it under R-3.5.2 to avoid installation error on R old release (3.5.2 and
+  3.5.3).
+
+# Version 0.5-0 (CRAN)
 
 - `null_complement` now treats a numeric `m` as a matrix with one column in all
   cases.
