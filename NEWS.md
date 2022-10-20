@@ -1,4 +1,22 @@
-# Version 0.5-2 (CRAN)
+# Version 0.5.5 (CRAN)
+
+- require Matrix (>= 1.5-0) to avoid problems for users who have an earlier
+  version of Matrix on their device. This may not be really needed for
+  `mcompanion` but packages that require it do.
+
+- added further tests.
+
+- add `lagged` to `Suggests` as it is used in some tests.
+
+- fixed `doi` links to use `\doi`.
+
+- now all references use Rd macros (references inserted before the introduction
+  of Rd macros were still using the old mechanism).
+
+- use Github actions, drop travisCI.
+
+
+# Version 0.5-3 (CRAN)
 
 - building the pdf manual was failing on R old release (3.5.2 and 3.5.3).
   Fixed by building the package under R-3.5.2.
