@@ -1,7 +1,7 @@
 Package: mcompanion
 Type: Package
 Title: Objects and Methods for Multi-Companion Matrices
-Version: 0.5.5
+Version: 0.5.6
 Authors@R: person(given = c("Georgi", "N."), family = "Boshnakov", 
                   role = c("aut", "cre"), 
                   email = "georgi.boshnakov@manchester.ac.uk") 
@@ -24,8 +24,8 @@ Collate: mc.R mcompanion.R utils_Jordan.R mat.R sim.R class_MC.R
         class_MF.R class_Jordan.R chains_smc.R class_SMC.R
         class_mcSpec.R
 NeedsCompilation: no
-Packaged: 2022-10-20 05:58:00 UTC; georgi
+Packaged: 2023-04-23 10:21:24 UTC; georgi
 Author: Georgi N. Boshnakov [aut, cre]
 Maintainer: Georgi N. Boshnakov <georgi.boshnakov@manchester.ac.uk>
 Repository: CRAN
-Date/Publication: 2022-10-20 06:42:57 UTC
+Date/Publication: 2023-04-23 12:40:06 UTC

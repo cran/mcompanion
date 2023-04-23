@@ -1,3 +1,9 @@
+# Version 0.5.6 (CRAN)
+
+- added `[` methods for class "MultiCompanion" with `drop = missing` for v1.5.5
+  of Matrix.
+
+
 # Version 0.5.5 (CRAN)
 
 - require Matrix (>= 1.5-0) to avoid problems for users who have an earlier

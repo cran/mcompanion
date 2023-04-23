@@ -247,6 +247,39 @@ setMethod("[", signature(x = "MultiCompanion",  i = "index", j = "index",
             else
               as(as(as(r, "dMatrix"), "generalMatrix"), "unpackedMatrix")
           })
+
+## 2023-04-22: add methods for drop = missing, see Michael Jager's email from 19 April 2023,
+##          whose suggested code is below.
+setMethod("[",
+           c(x = "MultiCompanion", i = "index", j = "missing", drop = "missing"),
+           function(x, i, j, ..., drop = TRUE) {
+               na <- nargs()
+               if (na == 2L)
+                   x[i, drop = TRUE]
+               else if (na == 3L)
+                   x[i, , drop = TRUE]
+               else stop("incorrect number of dimensions")
+           })
+
+setMethod("[",
+           c(x = "MultiCompanion", i = "missing", j = "index", drop = "missing"),
+           function(x, i, j, ..., drop = TRUE) {
+               na <- nargs()
+               if (na == 2L)
+                   x[j, drop = TRUE]
+               else if (na == 3L)
+                   x[, j, drop = TRUE]
+               else stop("incorrect number of dimensions")
+           })
+
+setMethod("[",
+           c(x = "MultiCompanion", i = "index", j = "index", drop = "missing"),
+           function(x, i, j, ..., drop = TRUE) {
+               na <- nargs()
+               if (na == 3L)
+                   x[i, j, drop = TRUE]
+               else stop("incorrect number of dimensions")
+           })
                                                                          #   end: subscripting
 
                                                                                   # begin: %*%

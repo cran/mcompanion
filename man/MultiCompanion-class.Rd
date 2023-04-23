@@ -16,6 +16,10 @@
 \alias{mcStable,MultiCompanion-method}
 \alias{t,MultiCompanion-method}
 
+\alias{[,MultiCompanion,index,index,missing-method}
+\alias{[,MultiCompanion,index,missing,missing-method}
+\alias{[,MultiCompanion,missing,index,missing-method}
+
 \title{Class "MultiCompanion"}
 \description{Objects and methods for multi-companion matrices}
 \section{Objects from the Class}{
@@ -126,7 +130,10 @@ Class \code{"Matrix"}, by class \code{"generalMatrix"}.
 
 
     \item{\%*\%}{\code{signature(x = "matrix", y = "MultiCompanion")}: ... }
-    \item{\%*\%}{\code{signature(x = "MultiCompanion", y = "matrix")}: ... }}
+    \item{\%*\%}{\code{signature(x = "MultiCompanion", y = "matrix")}: ... }
+    \item{[}{\code{signature(x = "MultiCompanion", i = "index", j = "index", drop = "missing")}: ... }
+    \item{[}{\code{signature(x = "MultiCompanion", i = "index", j = "missing", drop = "missing")}: ... }
+    \item{[}{\code{signature(x = "MultiCompanion", i = "missing", j = "index", drop = "missing")}: ... }}
 }
 \references{%
   \insertRef{boshnakov2002mc}{mcompanion}
