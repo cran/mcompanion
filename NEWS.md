@@ -1,3 +1,10 @@
+# Version 0.5.7 (CRAN)
+
+- fixed a CRAN error in a test that was checking unwisely the exact text of a
+  warning from `chol` about rank defficiency. That text changed recently,
+  causing test error from the package on CRAN.
+
+
 # Version 0.5.6 (CRAN)
 
 - added `[` methods for class "MultiCompanion" with `drop = missing` for v1.5.5

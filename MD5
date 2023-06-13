@@ -1,6 +1,6 @@
-efdbfb845d2e2431d53f47117196247f *DESCRIPTION
+6e0b21b3f4ac1e18864b1531f2efd139 *DESCRIPTION
 5328aa26b9959d3c0cdd4e6b280a1641 *NAMESPACE
-109e3628fa284924aef1535df889cd35 *NEWS.md
+bf01a7485205bf39c3c1bfac998beeaf *NEWS.md
 ebf7a7db5c3f3fea2d808163e7cc27a1 *R/chains_smc.R
 1cc45569f23130c387674eb3b681f412 *R/class_Jordan.R
 1793905793b1c81c25b7a76f6019145f *R/class_MC.R
@@ -12,9 +12,9 @@ ebf7a7db5c3f3fea2d808163e7cc27a1 *R/chains_smc.R
 8d5567cbfd6c8aa152941a58ec7543ca *R/mcompanion.R
 9028bf81215044c7ceb4064df9593062 *R/sim.R
 c2218140c9969bf5d3ea058ca452772b *R/utils_Jordan.R
-a5c95f644f52dd1c48f367082bf8f1dd *README.md
+cc7ab2506874b25fe49a9b85ed2ec06c *README.md
 2f7b2a15851fa6620c357dc7a94d4114 *TODO
-a6cd6d1c0946505bd728c96ca9a68a89 *build/partial.rdb
+5aa25e31c5254963d2af0f47cedcd5b8 *build/partial.rdb
 70af67f9a833e6fc0178d676a774f0d1 *inst/CITATION
 b9fe8154d661146daf20e03e9ff35576 *inst/REFERENCES.bib
 e80e2ee37f8c0123f30180be8a66428d *man/JordanDecomposition.Rd
@@ -45,7 +45,7 @@ f0d16f614053a957cae022ba98f90c66 *man/mc_eigen.Rd
 cb4b211342c495110d48170c1adf0eb8 *man/mc_factors.Rd
 aa3fc649a6f9733cd085f530b93fa549 *man/mc_from_factors.Rd
 37e0e5749d9cd6a4f273684f325adc6f *man/mc_matrix.Rd
-4991935dd7e471499aa0e312061670a5 *man/mcompanion-package.Rd
+065966a82b52c46f62ecd62f778145c0 *man/mcompanion-package.Rd
 21dd2726d6ee2482bf860f9e0b4ae72a *man/mf_VSform.Rd
 9491237bc235ce36253629827ec780b5 *man/nullComplement.Rd
 7bce70c6f7fca906caf2e0281991f1ec *man/optionalMatrix-class.Rd
@@ -93,7 +93,7 @@ fa670253c166d7f25611a4ddfc83cdb3 *tests/testthat/smc1_co
 947dbd7826509651e3c01c7a5a04e93a *tests/testthat/test-MultiCompanion.R
 8da4b4160807797520a1d141675a1131 *tests/testthat/test-co_ones.R
 6e62ae0fd5bef13278f691ee6c00f664 *tests/testthat/test-jordan.R
-db7134daf09496be14a8706fa8c7b82d *tests/testthat/test-ldl.R
+08097e0de1371707259071800801be26 *tests/testthat/test-ldl.R
 898ad82c475d3b66549bb4af099f436b *tests/testthat/test-mC.gen.R
 71c79ed5c06059df8c5a8eaf95ab4eda *tests/testthat/test-mcSpec.R
 ae0720f1b2a94bfd45096907eea7656a *tests/testthat/test-mcStable.R
