@@ -1,3 +1,9 @@
+# Version 0.5.8 (CRAN)
+
+- added a couple of methods for`%*% to avoid some methods for "MultiCompanion" 
+  being masked in the forthcoming v1.6-2 of Matrix.
+
+
 # Version 0.5.7 (CRAN)
 
 - fixed a CRAN error in a test that was checking unwisely the exact text of a

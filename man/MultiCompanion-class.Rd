@@ -3,6 +3,8 @@
 \alias{MultiCompanion-class}
 \alias{\%*\%,MultiCompanion,ANY-method}
 \alias{\%*\%,ANY,MultiCompanion-method}
+\alias{\%*\%,MultiCompanion,vector-method}
+\alias{\%*\%,vector,MultiCompanion-method}
 \alias{\%*\%,MultiCompanion,MultiCompanion-method}
 \alias{\%*\%,MultiCompanion,matrix-method}
 \alias{\%*\%,matrix,MultiCompanion-method}
@@ -133,7 +135,9 @@ Class \code{"Matrix"}, by class \code{"generalMatrix"}.
     \item{\%*\%}{\code{signature(x = "MultiCompanion", y = "matrix")}: ... }
     \item{[}{\code{signature(x = "MultiCompanion", i = "index", j = "index", drop = "missing")}: ... }
     \item{[}{\code{signature(x = "MultiCompanion", i = "index", j = "missing", drop = "missing")}: ... }
-    \item{[}{\code{signature(x = "MultiCompanion", i = "missing", j = "index", drop = "missing")}: ... }}
+    \item{[}{\code{signature(x = "MultiCompanion", i = "missing", j = "index", drop = "missing")}: ... }
+    \item{\%*\%}{\code{signature(x = "MultiCompanion", y = "vector")}: ... }
+    \item{\%*\%}{\code{signature(x = "vector", y = "MultiCompanion")}: ... }}
 }
 \references{%
   \insertRef{boshnakov2002mc}{mcompanion}

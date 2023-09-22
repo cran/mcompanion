@@ -1,9 +1,9 @@
-6e0b21b3f4ac1e18864b1531f2efd139 *DESCRIPTION
+c89f6156d3050546410b237a7eb41131 *DESCRIPTION
 5328aa26b9959d3c0cdd4e6b280a1641 *NAMESPACE
-bf01a7485205bf39c3c1bfac998beeaf *NEWS.md
+3f6a0e40161558621490a3f54d6581a9 *NEWS.md
 ebf7a7db5c3f3fea2d808163e7cc27a1 *R/chains_smc.R
 1cc45569f23130c387674eb3b681f412 *R/class_Jordan.R
-1793905793b1c81c25b7a76f6019145f *R/class_MC.R
+3f8480a84062a06cb0a07f8c7785cb29 *R/class_MC.R
 0e344b8a372882450088f5c77c19f9bb *R/class_MF.R
 1b56dcebd06493af6ae6ddcf7f01eebd *R/class_SMC.R
 3830ecfa1c7242987c7815ecb591c166 *R/class_mcSpec.R
@@ -14,12 +14,12 @@ ebf7a7db5c3f3fea2d808163e7cc27a1 *R/chains_smc.R
 c2218140c9969bf5d3ea058ca452772b *R/utils_Jordan.R
 cc7ab2506874b25fe49a9b85ed2ec06c *README.md
 2f7b2a15851fa6620c357dc7a94d4114 *TODO
-5aa25e31c5254963d2af0f47cedcd5b8 *build/partial.rdb
+614df07b5234a906cb14bf90d8a900b0 *build/partial.rdb
 70af67f9a833e6fc0178d676a774f0d1 *inst/CITATION
 b9fe8154d661146daf20e03e9ff35576 *inst/REFERENCES.bib
 e80e2ee37f8c0123f30180be8a66428d *man/JordanDecomposition.Rd
 42ca39e05725fb18cf58473485c0b090 *man/JordanDecompositionDefault-class.Rd
-f373dcc0c11f8b581f397494dd09251d *man/MultiCompanion-class.Rd
+24c3de8a997677e4bf1e6643ddde3681 *man/MultiCompanion-class.Rd
 e588032ecdda6db191e889d7975bcfe6 *man/MultiFilter-class.Rd
 192c50a26de90cb8805702bfce027fb9 *man/SmallMultiCompanion-class.Rd
 befbfe8badf0fb672839167e07c8f59b *man/VAR2pcfilter.Rd

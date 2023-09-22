@@ -300,7 +300,7 @@ setMethod("%*%", signature(x = "MultiCompanion", y = "MultiCompanion"),
 
 # special method for diagonal matrix? keep MultiCompanion type if mult by identity?
 
-# needs specific implementation but is ok
+## needs specific implementation but is ok
 setMethod("%*%", signature(x = "MultiCompanion", y = "ANY"),
           function(x,y){
               as(x, "dgeMatrix") %*% y   # use something like callGeneric instead?
@@ -313,6 +313,25 @@ setMethod("%*%", signature( x = "ANY", y = "MultiCompanion"),
               x %*% as(y, "dgeMatrix")
           }
           )
+
+## 2023-09-22: duplicate the above two  methods with "ANY" changed to "vector"
+##    to accommodate for a forthcoming change in Matrix v1.6-2, see email from 
+##     Mikael Jagan from 2023-09-16
+##
+## needs specific implementation but is ok
+setMethod("%*%", signature(x = "MultiCompanion", y = "vector"),
+          function(x,y){
+              as(x, "dgeMatrix") %*% y   # use something like callGeneric instead?
+          }
+          )
+
+## needs specific implementation but is ok
+setMethod("%*%", signature( x = "vector", y = "MultiCompanion"),
+          function(x,y){
+              x %*% as(y, "dgeMatrix")
+          }
+          )
+
 
 ## 2015-07-24 adding methods with signature "matrix" to resolve the following error and
 ##            warning from the last example in mCompanion:
